@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $new_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+<div class="blank">
+<div style=" clearfix">
+<div class="more clearfix best" id="itemNew" >
+<h1 class="tit">{$lang.new_goods}</h1>
+<h1 style="border-bottom:2px solid #E3E3E3;height:25px; line-height:25px;">
+<div style="float:right;">
+{if $cat_rec[3]}
+<h2><a href="javascript:void(0)" onclick="change_tab_style('itemNew', 'h2', this);get_cat_recommend(2, 0);">{$lang.all_goods}</a> |</h2>
+{foreach from=$cat_rec[3] item=rec_data}
+<h2 class="h2bg">
+<a href="javascript:void(0)" onclick="change_tab_style('itemNew', 'h2', this);get_cat_recommend(2, {$rec_data.cat_id})">{$rec_data.cat_name}</a> |
+
+</h2>
+{/foreach}
+{/if}
+<a href="../search.php?intro=hot" style="font-weight:normal;" >更多>></a>
+</div>
+</h1>
+</div>
+</div>
+<div class="recommendContent entry-content"  id="show_new_area" >
+<!-- {/if} -->
+<!--{foreach from=$new_goods item=goods}-->
+<div class="goodsbox1">
+				<div class="imgbox1"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+			 <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+              <font class="goodspice market">{$goods.market_price}</font>
+			 <!-- {if $goods.promote_price neq ""} -->
+			 <b class="f1">{$goods.promote_price}</b><br />
+			 <!-- {else}-->
+			 <b class="f1">{$goods.shop_price}</b><br />
+			 <!--{/if}-->
+
+			</div>
+<!--{/foreach}-->
+<!-- {if $cat_rec_sign neq 1} -->
+</div>
+</div>
+<!-- {/if} -->
+<!-- {/if} -->

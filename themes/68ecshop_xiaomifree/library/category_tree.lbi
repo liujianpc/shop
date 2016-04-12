@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class="mod1 mod2 blank" id="historybox">
+<h1  style="background:url(../images/sdgg.gif) repeat-x; height:27px; line-height:27px; padding-left:10px;"><a href="catalog.php"><font  style="color:#000; font-size:14px;">{$lang.all_category}</font></a></h1>
+	<span class="lb"></span><span class="rb"></span>
+<div class="cagegoryCon clearfix">
+<!--{foreach from=get_categories_tree() item=cat name=name}-->
+ <!--{if $smarty.foreach.name.last}-->
+ <dl style="border:none;">
+<!--{else}-->
+<dl>
+<!--{/if}-->
+ <dt><a href="{$cat.url}">{$cat.name|escape:html}</a></dt>
+ 
+ <!--{if $cat.cat_id}-->
+ <dd class="clearfix">
+ <!--{foreach name=childs from=$cat.cat_id item=child}-->
+     <p onMouseOver="this.className='itemsbg'" onMouseOut="this.className=''"><a href="{$child.url}" title="{$child.name|escape:html}" class="txtdot">{$child.name|escape:html}</a></p>
+ <!--{/foreach}-->
+ </dd>
+ <!--{/if}-->
+ </dl>
+ <!--{/foreach}-->
+</div>
+<div class="blank"></div>
+</div>

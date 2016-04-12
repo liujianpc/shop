@@ -1,0 +1,160 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+
+<script language="javascript"> 
+<!--
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+</script>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+
+<div class="page-header clearfix">
+  <div class="block1">
+  	<!--顶部导航 开始-->
+  	<div class="top_menu">
+     <div class="top_nav fl"> 
+     		<span class="current1 fl"><a  href="./index.php">无线流量先锋&nbsp;</a></span>
+        <div class="t_tdcode" style="z-index:9999999;" onmouseover="this.className='t_tdcode tdcode_show'" onmouseout="this.className='t_tdcode'">
+            <div class="tdcode_outter">
+              <div class="tdcode_inner"> <i class="arrow_outter">◆</i><i class="arrow_inner">◆</i>
+                <div class="pic"></div>
+                <p class="txt">QQ扫描二维码，随时随地与店家亲密接触<br>
+                  精彩活动，劲爆优惠触手可得！</p>
+              </div>
+            </div>
+          </div>
+        
+     		
+       
+      </div>
+    </div>
+    <div class="clear"></div>
+    <!--顶部导航 结束-->
+    <!--logo搜索框及购物车 开始-->
+    	 <div class="logo fl" style="position:relative; top:10px;"><a href="index.php" title=""><img src="images/logo.gif" width="300" height="63" alt="" /></a></div>
+         <div class="topArea fr" >
+         <div style="float:left; width:370px;">
+         <div class="Search fl">
+   <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    
+    <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()">
+       <input class="fl" name="keywords" type="text" id="keyword" value="请输入你要查找的商品" onclick="javascript:this.value='';"/>
+       <input class="fr btsearch" name="btsearch" type="submit" id="btsearch" value="" onmouseover="this.className='btsearch btsearchover'" onmouseout="this.className='btsearch'" />
+    </form>
+   
+  </div>
+  				 <p class="tags">
+    			<span>{if $searchkeywords}{foreach from=$searchkeywords item=val} <a href="search.php?keywords={$val|escape:url}">{$val}</a> {/foreach}
+       		 {/if}</span>
+   				 </p>
+           </div>
+     		 <div class="btMap">
+       			 
+              <div class="top_nav fr"> 
+     {insert_scripts files='transport.js,utils.js'} <font id="ECS_MEMBERZONE"> {* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+     <!--{if $navigator_list.top}--> 
+      <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
+     <font style="margin-left:20px;"> <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a> </font>
+
+      <!-- {/foreach} --> 
+      <!-- {/if} --> 
+      </div>
+             <div class="clear"></div>
+            
+     	 </div>
+       	 
+         </div>
+    </div>
+  </div>
+</div>
+<div class="globa-nav" style="position:relative; _margin-top:-6px;">
+    <div class="shadow">
+    
+    </div>
+    <div class="block1 clearfix">
+    <div class="fl" style="width:226px;">
+    	<h1  style="background:url(images/nav_bg.jpg) repeat-x; height:45px; line-height:45px; padding-left:10px; text-align:center"><a href="catalog.php"><font  style="color:#fff; font-size:14px;">{$lang.all_category}</font></a></h1>
+    </div>
+      <div class="allMenu fl"><a href="../index.php" title="" {if $navigator_list.config.index eq 1} class="current"{/if}>{$lang.home}</a>
+        <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav } --> 
+        <!--{if $smarty.foreach.nav_middle_list.iteration < 8}--> 
+     <a href="{$nav.url}" {if $nav.active eq 1} class="current"{/if} {if $nav.opennew eq 1}target="_blank" {/if} title="{$nav.name}" >{$nav.name}</a>
+        <!--{/if}--> 
+        <!-- {/foreach} --> 
+      </div>
+		</div>
+</div>
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/themes/68ecshop_xiaomifree/css/zzsc.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/themes/68ecshop_xiaomifree/js/jquery-1.7.min.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">10086</li>
+      <li class="yb_QQ">
+      	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=207055779&site=qq&menu=yes" title="即刻发送您的需求">在线咨询</a>
+      </li>
+      <li class="yb_ercode" style="height:53px;">支付宝二维码 <br>
+        <img class="hd_qr" src="images/weixin.jpg" width="125" alt="付款"> </li>
+    </ul>
+  </div>
+</div>
+
+

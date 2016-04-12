@@ -1,0 +1,138 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="themes/ecmoban_moonbasa2013/qq/images/qq.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<div class="block header ">
+<div class="top">
+ <div class=" logo">
+ <a href="../index.php" class="icon-common icon-common-logo">  </a>
+ </div>
+ <div class="right clearfix">
+ 
+   <div class="menu">
+ 
+  <ul class="clearfix">
+   
+	  
+	   <!--{if $navigator_list.top}-->
+   <li id="topNav" class="clearfix">
+    {insert_scripts files='transport.js,utils.js'}
+   <font id="ECS_MEMBERZONE" style=" float:left">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+    </li>
+   <!-- {/if} -->
+   <li>
+     <a href="#" >小米商城手机版</a>
+                            </li>
+							
+   </ul>
+   
+   </div>
+    <!--search start-->
+<div id="search" class="search">
+     
+        <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  >
+		
+          <input name="keywords" type="text" id="keyword" value="2s" onclick="javascript:this.value=''" class="txt " />
+          <input name="imageField" type="submit" value="" class="hdbtnsearch mbtn"  />
+	<span class="icon-common icon-common-search iconsear"></span>
+        </form>
+      
+      <label  class="hot">
+       
+          <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+           alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+	
+    </script>
+        <span>搜索热词：</span>  {if $searchkeywords}
+          {foreach from=$searchkeywords item=val} <a href="search.php?keywords={$val|escape:url}">{$val}</a> {/foreach}
+          {/if}
+      </label>
+    </div>
+<!--search end-->
+<div class="header_menu_top_cart">
+   <div   class="buy_car_bg clearfix" >
+	
+	<img src="../images/car.png" width="16" height="13" style="float:left; margin-right:5px; margin-left:18px; margin-top:13px; line-height:13px;" /> 
+	<div id="ECS_CARTINFO" style="float:left">
+
+   <p><a href="flow.php">{insert name='cart_info'}</a></p>
+     </div>
+	  </div>
+	  </div>
+   </div>
+  
+    </div>
+   <div class="blank"></div>
+ 
+   <div id="mainNav" class="block nav"  style="position:relative; z-index:999;" > 
+   <div class=" category_all2 category_all2_on"> <a class="all" href="catalog.php" style="color:#FFFFFF">全部商品分类</a>
+        
+      </div>
+  <ul class="u1" onmouseover="this.className='u1 u1_over '" onmouseout="this.className='u1'"   >
+  <a class="a1" href="../index.php"   {if $navigator_list.config.index eq 1}   {/if}>{$lang.home} </a>
+  </ul>
+ 
+	
+      
+      
+      
+ 
+
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+  <ul class="u1" onmouseover="this.className='u1 u1_over'" onmouseout="this.className='u1'" >
+  <a  class="a1" {if $nav.active eq 1}  id="aa_on" {/if}  href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a>
+  
+  	<!-- {if $nav.cat_list}-->
+		<div class='sub_nav'>
+			<dl >
+			<!--{foreach from=$nav.cat_list item=cat}-->
+			<dd>
+			<a class="t" href="{$cat.url}">{$cat.name|escape:html}</a>
+			<!--{foreach from=$cat.cat_id item=child name=no}-->
+			<!-- {if $smarty.foreach.no.iteration<11}-->
+			<a class="b" href="{$child.url}">{$child.name|escape:html}</a>
+			<!-- {/if} -->
+			<!--{/foreach}-->
+			</dd>
+			<!--{/foreach}-->
+			</dl>
+		</div>
+		
+	<!-- {/if}-->
+  
+  
+  </ul>
+ <!-- {/foreach} -->
+</div>
+
+ 
+	
+	
+	
+
+</div>
+
+
+
+
+
+
+
+
+

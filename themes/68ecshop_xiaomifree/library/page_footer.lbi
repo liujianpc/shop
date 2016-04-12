@@ -1,0 +1,107 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div style="padding:10px; _padding:10px 0px; background-color:#FFFFFF; width:1170px; _width:1190px; overflow:hidden;">
+<div class="pageFooter">
+  <div class="artBox">
+    <div class="artList" style="display:inline-block;margin:auto;"> 
+     
+      <!-- {foreach from=$helps item=help_cat name=helps } -->
+      <div <!--{if $smarty.foreach.helps.first}--> class="list1 fl" <!--{/if}--> class="list">
+        <h4>{$help_cat.cat_name}</h4>
+        <ul> 
+          <!-- {foreach from=$help_cat.article item=item} -->
+          <li><a href="{$item.url}" target="_blank" title="{$item.title|escape:html}">{$item.short_title}</a> </li>
+          <!-- {/foreach} --> 
+        </ul>
+      </div>
+      <!-- {/foreach} --> 
+      <div class="fl list1" style="display:block;margin:auto;">
+      <h4>官方QQ群1</h4>
+      <img style="display:block;" width="115px" height="158px" src="images/qq1.png">
+      
+      
+      </div>
+       <div class="fl list1" style="display:block;margin:auto;">
+      <h4>官方QQ群2</h4>
+      <img style="display:block;" width="115px" height="158px" src="images/qq2.png">
+      
+      
+      </div>
+    </div>
+  </div>
+
+<div class="blank"></div>
+<!--帮助-->
+<!--友情链接 start-->
+<!--{if $img_links  or $txt_links }-->
+<div id="bottomNav" >
+ <div class="box_1">
+  <div class="links1 ">
+    <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+ 
+   <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" alt="{$link.name}" border="0" /></a>
+   
+    <!--结束图片类型的友情链接{/foreach}-->
+    <div class="clear"></div>
+    
+    <!-- {if $txt_links} -->
+    <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+    <a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>
+    <!--结束文字类型的友情链接{/foreach}-->
+    <!-- {/if} -->
+    
+		
+  </div>
+ </div>
+</div>
+<!--{/if}-->
+<!--友情链接 end-->
+<div class="blank"></div>
+<div class="block tc" style=""> <img src="../images/serviceImg1.gif"></div>
+</div>
+</div>
+<div class="block tc" style="margin-top:10px;"> 
+  <!-- {if $navigator_list.bottom} --> 
+   <div style="margin-bottom:5px;">
+  <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} --> 
+  <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a> 
+  <!-- {if !$smarty.foreach.nav_bottom_list.last} --> 
+  | 
+  <!-- {/if} --> 
+  <!-- {/foreach} --><br />
+  </div>
+  <!-- {/if} --> 
+  
+  {$copyright}<br />
+  {$shop_address} {$shop_postcode} 
+  <!-- 客服电话{if $service_phone} --> 
+  Tel: {$service_phone} 
+  <!-- 结束客服电话{/if} --> 
+  <!-- 邮件{if $service_email} --> 
+  E-mail: {$service_email}<br />
+  <!-- 结束邮件{/if} --> 
+  <!-- QQ 号码 {foreach from=$qq item=im} --> 
+  <!-- {if $im} --> 
+
+  
+  <!-- {/if} --> <!-- {/foreach} 结束QQ号码 --><!-- 淘宝旺旺 {foreach from=$ww item=im} --> <!-- {if $im} --> <a href="http://amos1.taobao.com/msg.ww?v=2&uid={$im|escape:u8_url}&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid={$im|escape:u8_url}&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />{$im}</a> 
+  <!-- {/if} --> 
+  <!--{/foreach} 结束淘宝旺旺 --> 
+  <!-- Yahoo Messenger {foreach from=$ym item=im} --> 
+  <!-- {if $im} --> 
+  <a href="http://edit.yahoo.com/config/send_webmesg?.target={$im}n&.src=pg" target="_blank"><img src="../images/yahoo.gif" width="18" height="17" border="0" alt="Yahoo Messenger" /> {$im}</a> 
+  <!-- {/if} --> 
+  <!-- {/foreach} 结束Yahoo Messenger --> 
+  <!-- MSN Messenger {foreach from=$msn item=im} --> 
+  <!-- {if $im} --> 
+  <img src="../images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact={$im}">{$im}</a> 
+  <!-- {/if} --> 
+  <!-- {/foreach} 结束MSN Messenger --> 
+  <!-- Skype {foreach from=$skype item=im} --> 
+  <!-- {if $im} --> 
+  <img src="http://mystatus.skype.com/smallclassic/{$im|escape:url}" alt="Skype" /><a href="skype:{$im|escape:url}?call">{$im}</a> 
+  <!-- {/if} --> 
+  <!-- {/foreach} --><br />
+  <!-- ICP 证书{if $icp_number} --> 
+  {$lang.icp_number}:<a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a><br />
+  <!-- 结束ICP 证书{/if} --> 
+

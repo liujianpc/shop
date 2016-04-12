@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regions>
+  <file name="activity.dwt"/>
+  <file name="article.dwt">
+    <region name="右边区域">
+      <lib>promotion_info</lib>
+      <lib>history</lib>
+    </region>
+  </file>
+  <file name="article_cat.dwt">
+    <region name="左边区域">
+      <lib>article_category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="文章列表下可编辑区域"/>
+  </file>
+  <file name="article_pro.dwt"/>
+  <file name="auction.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="auction_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>promotion_info</lib>
+      <lib>history</lib>
+    </region>
+  </file>
+  <file name="brand.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>promotion_info</lib>
+      <lib>top10</lib>
+      <lib>history</lib>
+    </region>
+  </file>
+  <file name="brand_list.dwt"/>
+  <file name="catalog.dwt"/>
+  <file name="category.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>top10</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="商品列表上可编辑区域"/>
+  </file>
+  <file name="compare.dwt"/>
+  <file name="exchange_goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>goods_attrlinked</lib>
+      <lib>history</lib>
+      <lib>goods_article</lib>
+    </region>
+    <region name="右边区域">
+      <lib>comments</lib>
+    </region>
+  </file>
+  <file name="exchange_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>top10</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="商品列表上可编辑区域">
+      <lib>exchange_hot</lib>
+    </region>
+    <region name="商品列表下可编辑区域"/>
+  </file>
+  <file name="flow.dwt"/>
+  <file name="gallery.dwt"/>
+  <file name="goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>goods_attrlinked</lib>
+      <lib>history</lib>
+      <lib>goods_article</lib>
+    </region>
+    <region name="右边可编辑区">
+      <lib>comments</lib>
+    </region>
+  </file>
+  <file name="group_buy_goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="group_buy_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="index.dwt">
+    <region name="网店公告下广告位178x72"/>
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>top10</lib>
+      <lib>promotion_info</lib>
+      <lib>invoice_query</lib>
+      <lib>order_query</lib>
+      <lib>email_list</lib>
+      <lib>vote_list</lib>
+    </region>
+    <region name="特价商品广告位126x182"/>
+    <region name="热卖商品广告位126x182"/>
+    <region name="最新文章下广告位200x214"/>
+    <region name="首页通栏广告782x60"/>
+    <region name="精品推荐广告位200x368"/>
+    <region name="新品上市广告位200x368"/>
+    <region name="右边可编辑区">
+      <lib>brands</lib>
+      <lib>group_buy</lib>
+      <lib>auction</lib>
+    </region>
+  </file>
+  <file name="message.dwt"/>
+  <file name="message_board.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+      <lib>top10</lib>
+    </region>
+  </file>
+  <file name="myship.dwt"/>
+  <file name="pick_out.dwt">
+    <region name="左边区域">
+      <lib>categorys</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+      <lib>top10</lib>
+    </region>
+  </file>
+  <file name="quotation.dwt"/>
+  <file name="receive.dwt"/>
+  <file name="respond.dwt"/>
+  <file name="search.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>top10</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="snatch.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="style.css"/>
+  <file name="tag_cloud.dwt"/>
+  <file name="topic.dwt"/>
+  <file name="user_clips.dwt"/>
+  <file name="user_passport.dwt"/>
+  <file name="user_transaction.dwt"/>
+  <file name="wholesale_list.dwt"/>
+  <file name="">
+    <region name="网店公告下广告位178x72"/>
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>top10</lib>
+      <lib>promotion_info</lib>
+      <lib>invoice_query</lib>
+      <lib>order_query</lib>
+      <lib>email_list</lib>
+      <lib>vote_list</lib>
+    </region>
+    <region name="特价商品广告位126x182"/>
+    <region name="热卖商品广告位126x182"/>
+    <region name="最新文章下广告位200x214"/>
+    <region name="首页通栏广告782x60"/>
+    <region name="精品推荐广告位200x368"/>
+    <region name="新品上市广告位200x368"/>
+    <region name="右边可编辑区">
+      <lib>brands</lib>
+      <lib>group_buy</lib>
+      <lib>auction</lib>
+    </region>
+  </file>
+</regions>

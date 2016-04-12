@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header1.lbi" --><!-- #EndLibraryItem -->
+<div class="clear"></div>
+<!--主体内容 start-->
+<div class="block" style="background-color:#FFFFFF; margin-bottom:10px; padding-bottom:4px;"><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+ <div class="mod1 blank">
+	<span class="lt"></span><span class="lb"></span><span class="rt"></span><span class="rb"></span>
+	<h1 class="mod1tit">{$lang.all_category}</h1>
+	<div class="mod1con clearfix">
+	<!--{foreach from=$cat_list item=cat}-->
+            <div style="white-space:nowrap; padding-left:{$cat.level*2}em;
+              {if $cat.has_children eq 0}float:left;padding-left: 1em;{else}clear:both;font-weight:bold;padding-top: 10px;{/if}
+              "><a href="{$cat.url}">{$cat.cat_name}({$cat.goods_num})</a></div>
+   <!--{/foreach}-->
+	</div>
+</div>
+</div>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/themes/68ecshop_xiaomifree/css/zzsc.css" rel="stylesheet" type="text/css"/>
+<link href="/shop/themes/68ecshop_xiaomifree/css/zzsc.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone"></li>
+      <li class="yb_QQ">
+      	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=207055779&site=qq&menu=yes" title="即刻发送您的需求">在线咨询</a>
+      </li>
+      <li class="yb_ercode" style="height:53px;">支付宝二维码 <br>
+        <img class="hd_qr" src="images/weixin.jpg" width="125" alt="付款"> </li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+
+<!--主体内容 end-->
+
+<!-- #BeginLibraryItem "/library/page_footer_z.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="footer block">
+<div class="footerup">
+  <div class="footercont">
+    <ul class="nums clearfix">
+      <li class="first"> <a href="#" target="_blank"> <span>7</span> <strong>
+        <label>天</label>
+        退货保障 </strong> </a> </li>
+      <li class="line">|</li>
+      <li class="second"> <a href="#" target="_blank"> <span>15</span> <strong>
+        <label>天</label>
+        换货承诺 </strong> </a> </li>
+      <li class="line">|</li>
+      <li class="third"> <a href="#" target="_blank"> <span>100</span> <strong>
+        <label>元起</label>
+        全场免邮费 </strong> </a> </li>
+      <li class="line"></li>
+      <li class="fourth"> <a href="#" target="_blank"> <span>420</span> <strong>
+        <label>余家</label>
+        售后服务网点 </strong> </a> </li>
+    </ul>
+   
+    <!--底部导航 start-->
+    <!--底部导航 end-->
+    <div class="service clearfix ">
+      <!--{if $helps}-->
+      <!-- {foreach from=$helps item=help_cat name=no} -->
+      <!-- {if $smarty.foreach.no.iteration<5}-->
+      <dl>
+        <dt><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}">{$help_cat.cat_name}</a></dt>
+        <!-- {foreach from=$help_cat.article item=item} -->
+        <dd><a href="{$item.url}" title="{$item.title|escape:html}">{$item.short_title}</a></dd>
+        <!-- {/foreach} -->
+      </dl>
+      <!--{/if}-->
+      <!-- {/foreach} -->
+      <!--{/if}-->
+      <dl>
+        <dt>关注我们</dt>
+        <dd class="sina"> <span class="icon-common1 icon-common-sina"></span> <a href="#" target="_blank"> 新浪微博 </a> </dd>
+        <dd class="kongjian"> <span class="icon-common1 icon-common-kongjian"></span> <a href="#" target="_blank"> QQ空间 </a> </dd>
+        <dd id="txweixin" class="facebook"> <span class="icon-common1 icon-common-weixin"></span> <a> 官方微信 </a> </dd>
+      </dl>
+      <div class="online">
+        <ul>
+          <li class="item1"> <span class="icon-common1 icon-common-tel"></span>400-100-5678 </li>
+          <li class="item2"> 仅收市话费，周一至周日8:00-18:00 </li>
+        <li class="item3 clearfix"> <a class="btn btn-green" href="http://wpa.qq.com/msgrd?V=1&amp;Uin=1991371288&amp;site=qq&amp;menu=yes"><span class="icon-common1 icon-common-face"></span>24小时在线客服</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="info " >
+  <!--友情链接 start-->
+    <!--{if $img_links  or $txt_links }-->
+   
+ 友情链接：
+        <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+        <a href="{$link.url}" target="_blank" title="{$link.name}"><img style="width:88px; height:31px;" src="{$link.logo}" alt="{$link.name}" border="0" /></a>
+        <!--结束图片类型的友情链接{/foreach}-->
+        <!-- {if $txt_links} -->
+        <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+        <a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a><em></em>
+        <!--结束文字类型的友情链接{/foreach}-->
+        <!-- {/if} -->
+    
+
+    <!--{/if}-->
+    <!--友情链接 end-->
+  <img alt="" src="../images/footerbg.png"> </div>
+<div class="believe">
+ <a target="_blank" href="#"><img src="../images/cnnicVerifyseal.png" style="border:none;height:42px;" oncontextmenu="return false;" alt="可信网站"></a>
+ <a target="_blank" href="#"><img alt="诚信网站" src="../images/szfwVerifyseal.gif" style="border:none;"></a> 
+ <a target="_blank" href="#"><img alt="诚信网站" src="../images/save.jpg" style="border:none;"></a> </div>
+ <div align="center" style="padding-bottom:15px;" >  {insert name='query_info'}
+  {foreach from=$lang.p_y item=pv}{$pv}{/foreach}{$licensed}<br />
+    {if $stats_code}
+   {$stats_code}
+    {/if}       <a href="http://www.moke8.com/" target="_blank" title="网站模板">网站模板</a><a href=" http://www.ecmoban.com" target="_blank"><img src="../images/ecmoban.gif" alt="ECShop模板" /></a></div>
+
+<link href="OKQQ/images/qq.css" rel="stylesheet" type="text/css" />
+<div class="QQbox" id="divQQbox" style="width: 170px; ">
+<div class="Qlist" id="divOnline" onmouseout="hideMsgBox(event);" style="display: none; " onmouseover="OnlineOver();">
+    <div class="t"></div>
+   <div class="infobox">我们营业的时间<br>07:00-24:00</div>
+    <div class="con">
+        <ul>
+        
+<li class=odd><a href='http://wpa.qq.com/msgrd?V=1&amp;Uin=1378384050&amp;Site=客服1&amp;Menu=yes' target='_blank'><img src=' http://wpa.qq.com/pa?p=1:1378384050:4'  border='0' alt='QQ' />客服1</a></li>
+<li class=odd><a href='http://wpa.qq.com/msgrd?V=1&amp;Uin=1578349127&amp;Site=客服2&amp;Menu=yes' target='_blank'><img src=' http://wpa.qq.com/pa?p=1:1578349127:4'  border='0' alt='QQ' />客服2</a></li>
+<li class=odd><a href='http://wpa.qq.com/msgrd?V=1&amp;Uin=1506496052&amp;Site=客服3&amp;Menu=yes' target='_blank'><img src=' http://wpa.qq.com/pa?p=1:1506496052:4'  border='0' alt='QQ' />客服3</a></li>
+ 
+        </ul>
+    </div>
+    <div class="b"></div>
+</div>
+<div id="divMenu" onmouseover="OnlineOver();" style="display: block; "><img src="OKQQ/images/qq_1.gif" class="press" alt="在线咨询"></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var tips; var theTop = 120/*这是默认高度,越大越往下*/; var old = theTop;
+function initFloatTips() {
+tips = document.getElementById('divQQbox');
+moveTips();
+};
+function moveTips() {
+var tt=50;
+if (window.innerHeight) {
+pos = window.pageYOffset
+}
+else if (document.documentElement && document.documentElement.scrollTop) {
+pos = document.documentElement.scrollTop
+}
+else if (document.body) {
+pos = document.body.scrollTop;
+}
+pos=pos-tips.offsetTop+theTop;
+pos=tips.offsetTop+pos/10;
+if (pos < theTop) pos = theTop;
+if (pos != old) {
+tips.style.top = pos+"px";
+tt=10;
+//alert(tips.style.top);
+}
+old = pos;
+setTimeout(moveTips,tt);
+}
+//!]]>
+initFloatTips();
+function OnlineOver(){
+document.getElementById("divMenu").style.display = "none";
+document.getElementById("divOnline").style.display = "block";
+document.getElementById("divQQbox").style.width = "170px";
+}
+function OnlineOut(){
+document.getElementById("divMenu").style.display = "block";
+document.getElementById("divOnline").style.display = "none";
+}
+if(typeof(HTMLElement)!="undefined")    //给firefox定义contains()方法，ie下不起作用
+{   
+      HTMLElement.prototype.contains=function(obj)   
+      {   
+          while(obj!=null&&typeof(obj.tagName)!="undefind"){ //通过循环对比来判断是不是obj的父元素
+   　　　　if(obj==this) return true;   
+   　　　　obj=obj.parentNode;
+   　　}   
+          return false;   
+      };   
+}  
+function hideMsgBox(theEvent){ //theEvent用来传入事件，Firefox的方式
+　 if (theEvent){
+　 var browser=navigator.userAgent; //取得浏览器属性
+　 if (browser.indexOf("Firefox")>0){ //如果是Firefox
+　　 if (document.getElementById('divOnline').contains(theEvent.relatedTarget)) { //如果是子元素
+　　 return; //结束函式
+} 
+} 
+if (browser.indexOf("MSIE")>0){ //如果是IE
+if (document.getElementById('divOnline').contains(event.toElement)) { //如果是子元素
+return; //结束函式
+}
+}
+}
+/*要执行的操作*/
+document.getElementById("divMenu").style.display = "block";
+document.getElementById("divOnline").style.display = "none";
+}
+</script>

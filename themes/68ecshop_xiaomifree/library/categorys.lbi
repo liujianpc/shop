@@ -1,0 +1,54 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $cat_list} -->
+<div class="mod1 mod2 blank" id="historybox">
+<h1 class="mod2tit">产品目录</h1>
+<div class="cagegoryCon clearfix">
+<ul>
+	 <!-- {foreach from=$cat_list item=cat} -->
+    <li style="background:url(../images/helpIcon001.gif) left center no-repeat; text-indent:15px; height:25px; line-height:25px;"><a href="{$cat.url}" ><b>{$cat.cat_name|escape:html}</b> {if $cat.goods_num}({$cat.goods_num}){/if}</a></li>
+   <!--{/foreach}-->
+   </ul>
+</div>
+<div class=" blank"></div>
+</div>
+<!-- {/if} -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/shop/themes/68ecshop_xiaomifree/css/zzsc.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">10086</li>
+      <li class="yb_QQ">
+      	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=207055779&site=qq&menu=yes" title="即刻发送您的需求">在线咨询</a>
+      </li>
+      <li class="yb_ercode" style="height:53px;">支付宝二维码 <br>
+        <img class="hd_qr" src="images/weixin.jpg" width="125" alt="付款"> </li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
